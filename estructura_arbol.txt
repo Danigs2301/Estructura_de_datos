@@ -1,0 +1,34 @@
+viaje_relajacion,viajes,1,lugar,panorama
+viaje_no_relajacion,viajes,2,avantura,cultural
+lugar,viaje_relajacion,1,balneario,no balneario
+panorama,viaje_relajacion,2,jardin,paisajes
+balneario,lugar,1,ciudad1,ciudad2
+no_balneario,lugar,2,termales,no termales
+termales,no_balneario,1,ciudad1,ciudad2
+no_termales,no_balneario,2,spa,no spa
+spa,no_termales,1,ciudad1,ciudad2
+no_spa,no_termales,2,playa,resort
+playa,no_spa,1,ciudad1,ciudad2
+resort,no_spa,2,ciudad1,ciudad2
+jardin,panorama,1,ciudad1,ciudad2
+paisaje,panorama,2,ciudad1,ciudad2
+aventura,viaje_no_relajacion,1,aventura extrema,naturaleza
+aventura_extrema,aventura,1,escalada,deporte acuatico
+naturaleza,aventura,2,cueva,no cueva
+escalada,aventura_extrema,1,ciudad1,ciudad2
+deporte_acuatico,aventura_extrema,2,ciudad1,ciudad2
+cueva,naturaleza,1,ciudad1,ciudad2
+no_cueva,naturaleza,2,selva,desierto
+selva,no_cueva,1,ciudad1,ciudad2
+desierto,no_cueva,2,ciudad1,ciudad2
+viaje_cultural,viaje_no_relajacion,2,ciudades historicas,museos
+ciudades_historicas,viaje_cultural,1,monumentos historicos,no monumentos historicos
+museos,viaje_cultural,2,arte,no arte
+monumentos_historicos,ciudades_historicas,1,ciudad1,ciudad2
+no_monumentos_historicos,ciudades_historicas,2,ciudades antiguas,batallas
+ciudades_antiguas,no_monumentos_historicos,1,ciudad1,ciudad2
+batallas,no_monumentos_historicos,2,ciudad1,ciudad2
+arte,museos,1,ciudad1,ciudad2
+no_arte,museos,2,ciencia y tecnológia,arqueología
+ciencia_tecnología,museos,1,ciudad1,ciudad2
+arqueologia,museos,2,ciudad1,ciudad2
