@@ -137,6 +137,7 @@ def modificarCliente ():
 
             else:
                 print("Opción no válida")
+                time.sleep(2)
 
             print("\nSeleccione qué desea modificar:")
             print("1. Nombre")
@@ -151,32 +152,4 @@ def modificarCliente ():
         time.sleep(2)
     else:
         print("El número de identificación no coincide")
-        time.sleep(2)
-
-
-
-while True:
-    print("\nMenú de opciones:")
-    print("1. Registrar un cliente")
-    print("2. Buscar y mostrar un cliente")
-    print("3. Modificar información de un cliente")
-    print("4. Salir")
-
-    opcion = input("Seleccione una opción: ")
-
-    if opcion == "1":
-        registrarCliente()
-        
-    elif opcion == "2":
-        buscar_MostrarCliente()
-
-    elif opcion == "3":
-        modificarCliente()
-
-    elif opcion == "4":
-        print("Saliendo del programa.")
-        break
-
-    else:
-        print("Opción no válida. Por favor, seleccione una opción válida.")
         time.sleep(2)
