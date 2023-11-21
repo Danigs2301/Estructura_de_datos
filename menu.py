@@ -1,7 +1,11 @@
 from arboles import *
 from clienteRegistro import *
+
+#funcion de salida del menu 
 def salida ():
     return "salida"
+
+#Creacion del menu y seleccion de la opción que el usuario desee
 def menu():
     
     menu = """"
@@ -47,6 +51,7 @@ def menu():
     
     return selection()
 
+#Inicia ejecucion de codigo y repeticion del menu hasta la salida
 def main():
     while True:
 
