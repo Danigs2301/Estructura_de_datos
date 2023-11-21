@@ -2,33 +2,69 @@ viaje_relajacion,viajes,1,lugar,panorama
 viaje_no_relajacion,viajes,2,avantura,cultural
 lugar,viaje_relajacion,1,balneario,no balneario
 panorama,viaje_relajacion,2,jardin,paisajes
-balneario,lugar,1,ciudad1,ciudad2
+balneario,lugar,1,cancun,Nice
 no_balneario,lugar,2,termales,no termales
-termales,no_balneario,1,ciudad1,ciudad2
+termales,no_balneario,1,Mendoza,Grindavik
 no_termales,no_balneario,2,spa,no spa
-spa,no_termales,1,ciudad1,ciudad2
+spa,no_termales,1, Alicante,Hua Hin
 no_spa,no_termales,2,playa,resort
-playa,no_spa,1,ciudad1,ciudad2
-resort,no_spa,2,ciudad1,ciudad2
-jardin,panorama,1,ciudad1,ciudad2
-paisaje,panorama,2,ciudad1,ciudad2
+playa,no_spa,1,Whitsunday Island,La Digue
+resort,no_spa,2, Paradise Island,Marrakech
+jardin,panorama,1,Brentwood Bay,Versalles
+paisaje,panorama,2,Fiordos de Noruega,Atacama
 aventura,viaje_no_relajacion,1,aventura extrema,naturaleza
 aventura_extrema,aventura,1,escalada,deporte acuatico
 naturaleza,aventura,2,cueva,no cueva
-escalada,aventura_extrema,1,ciudad1,ciudad2
-deporte_acuatico,aventura_extrema,2,ciudad1,ciudad2
-cueva,naturaleza,1,ciudad1,ciudad2
+escalada,aventura_extrema,1,California,Patagonia
+deporte_acuatico,aventura_extrema,2,Queensland,Hawá
+cueva,naturaleza,1,Nuevo México,Cantabria
 no_cueva,naturaleza,2,selva,desierto
-selva,no_cueva,1,ciudad1,ciudad2
-desierto,no_cueva,2,ciudad1,ciudad2
+selva,no_cueva,1,Amazonia,Borneo 
+desierto,no_cueva,2,Sáhara,Atacama
 viaje_cultural,viaje_no_relajacion,2,ciudades historicas,museos
 ciudades_historicas,viaje_cultural,1,monumentos historicos,no monumentos historicos
 museos,viaje_cultural,2,arte,no arte
-monumentos_historicos,ciudades_historicas,1,ciudad1,ciudad2
+monumentos_historicos,ciudades_historicas,1,Agra,Atenas
 no_monumentos_historicos,ciudades_historicas,2,ciudades antiguas,batallas
-ciudades_antiguas,no_monumentos_historicos,1,ciudad1,ciudad2
-batallas,no_monumentos_historicos,2,ciudad1,ciudad2
-arte,museos,1,ciudad1,ciudad2
-no_arte,museos,2,ciencia y tecnológia,arqueología
-ciencia_tecnología,museos,1,ciudad1,ciudad2
-arqueologia,museos,2,ciudad1,ciudad2
+ciudades_antiguas,no_monumentos_historicos,1,Roma,cuzco
+batallas,no_monumentos_historicos,2,Marathon,Gettysburg
+arte,museos,1,paris,madrid
+no_arte,museos,2,ciencia y tecnologia,arqueologia
+ciencia_tecnologia,no_arte,1,California,Ginebra
+arqueologia,no_arte,2,Petra ,Yucatán
+Termas_ de_Cacheuta-Mendoza,termales,1,None,None
+Blue_Lagoon-Grindavik,termales,2,None,None
+Cancun-Quintana_Roo,balneario,1,None,None
+Nice-Costa_Azul,balneario,2,None,None
+Sha_Wellness_Clinic-Alicante,spa,1,None,None
+Chiva_Som-THua Hin,spa,2,None,None
+Whitehaven_Beach-Whitsunday Island,playa,1,None,None
+Anse_Source_d'Argent-La_Digue,playa,2,None,None
+Atlantis_Paradise_Island-Paradise Island,resort,1,None,None
+Marrakech_La_Palmeraie-Marrakech,resort,2,None,None
+Fiordos_de_Noruega-bergen,paisaje,1,None,None
+Valle_de_la_Luna-Atacama,paisaje,2,None,None
+Butchart_Gardens-Brentwood_Bay,jardin,1,None,None
+Jardines_de_Versalles-Versalles,jardin,2,None,None
+Cuevas_de_Carlsbad-Nuevo_México,cueva,1,None,None
+Cueva_de_Altamira-Cantabria,cueva,2,None,None
+Amazonia-brasilia,selva,1,None,None
+Borneo_Rainforest-Borneo,selva,2,None,None
+roma-italia,ciudades_antiguas,1,None,None
+Machu_Picchu-cuzco,ciudades_antiguas,2,None,None
+Battlefield_of_Marathon-Marathon,batallas,1,None,None
+Gettysburg_National_Military_Park-Gettysburg,batallas,2,None,None
+Louvre Museum-paris,arte,1,None,None
+Museo_Nacional_del_Prado-madrid,arte,2,None,None
+petra-Ma'an,arqueologia,1,None,None
+Chichen_Itzá-Yucatán,arqueologia,2,None,None
+El Capitan-California,escalada,1,None,None
+Monte_Fitz_Roy-Patagonia,escalada,2,None,None
+Gold_Coast-Queensland,deporte_acuatico,1,None,None
+Maui-hawai,deporte_acuatico,2,None,None
+sahara-el_cairo,desierto,1,None,None
+Atacama-region_de_antofagasta,desierto,2,None,None
+Taj_Mahal-agra,monumentos_historicos,1,None,None
+Acrópolis_de_atenas-atena,monumentos_historicos,2,None,None
+Silicon-California,ciencia_tecnologia,1,None,None
+CERN-Ginebra,ciencia_tecnologia,2,None,None

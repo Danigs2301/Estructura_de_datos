@@ -1,4 +1,4 @@
-from pruebas import *
+from TDArbol import *
 import matplotlib.pyplot as plt
 
 class nodo_tree(object):
@@ -10,7 +10,8 @@ class nodo_tree(object):
         self.hijo1 = hijo1
         self.hijo2 = hijo2
 
-    def pregunta(hijo1, hijo2):
+    #Pregunta acerca de la preferencia que desea seleccionar el usuario de acuerdo al árbol 
+    def pregunta(self, padre, hijo1, hijo2):
         preferencias = f"""
                 Indique su preferencia:
                 1: {hijo1}
@@ -18,7 +19,41 @@ class nodo_tree(object):
         """
         print(preferencias)
 
-def main ():
+#Realiza el recorrido del árbol dependiendo de hacia que lado se dirigen las preferencias del usuario
+def recorrer(raiz, lado):
+    if lado == 1:
+        raiz=raiz.izq
+
+    elif lado == 2:
+        raiz = raiz.der
+    
+    return raiz
+
+#Solicita la información acerca de la preferencia que desea el usuario, imprimiendo las preferencias 
+def recorrer_arbol(raiz):
+    while True:
+        raiz.info.pregunta(raiz.info.nombre, raiz.info.hijo1, raiz.info.hijo2)
+        
+        while True:
+            try:
+                lado = int(input("Ingrese la opción de preferencia (1 o 2): "))
+                if lado in (1, 2):
+                
+                    break
+                else:
+                    print("Error: Por favor, ingrese un número válido (1 o 2).")
+            except ValueError:
+                print("Error: Por favor, ingrese un número entero.")
+
+        raiz = recorrer(raiz, lado)
+        
+        if raiz.izq == None or raiz.der == None:
+            print(raiz.info.nombre)
+            break  
+
+
+#Base de código del archivo donde se crea la raiz, se lee el archivo txt con la estructura del árbol y gráfica el árbol 
+def ejecucion_arbol ():
     
     raiz = nodo_arbol(nodo_tree("viajes", None,None,"relajacion","no_relajacion"))
 #\
@@ -43,10 +78,7 @@ def main ():
             #Arbol
             objeto1 = nodo_tree(variables[0],variables[1],int(variables[2]),variables[3],variables[4])
             insertar_nodo(raiz,objeto1)
-
-    # por_nivel(raiz)
-    print(raiz.info.nombre)
-    print(diccionario_arbol_grafica)
+        
 
     def plot_tree(tree, parent_name, graph, pos=None, level=0, width=50, vert_gap = 500, xcenter = 0.5):
         if pos is None:
@@ -78,11 +110,4 @@ def main ():
     plt.subplots_adjust(left=0, bottom=0, right=1, top=1, wspace=1, hspace=1)
 
     plt.show()
-       
-main() 
-    
-    
-    
-
-
-        
+    recorrer_arbol(raiz)
