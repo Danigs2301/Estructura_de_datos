@@ -452,6 +452,14 @@ def agregarRelacion():
     input()
 
 
+def graficarGrafo():
+
+    pos = nx.kamada_kawai_layout(G)
+
+    # Dibujar el grafo
+    nx.draw(G, pos, with_labels=True, font_weight='bold', node_size=700, node_color='skyblue', font_size=8)
+    plt.show()
+
 
 def mejorCamino():
 
@@ -600,6 +608,9 @@ def menu():
 
             elif op == 5:
 
+
+                graficarGrafo()
+
                 """
                 pos = nx.layout.planar_layout(G)
                 nx.draw_networkx(G, pos)
@@ -607,11 +618,7 @@ def menu():
                 nx.draw_networkx_edge_labels(G, pos, edge_labels=labels)
                 plt.show()"""
 
-                pos = nx.kamada_kawai_layout(G)
 
-                # Dibujar el grafo
-                nx.draw(G, pos, with_labels=True, font_weight='bold', node_size=700, node_color='skyblue', font_size=8)
-                plt.show()
             
             elif op == 6:
 
